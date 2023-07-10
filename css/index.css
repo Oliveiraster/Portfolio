@@ -140,3 +140,10 @@ span#dev{
 .contato_pessoal a{
     text-decoration: none;  
 }
+@media (max-width:500px) {
+    section#eu{
+        flex-direction: column;
+        height: 400px
+        }
+   
+}

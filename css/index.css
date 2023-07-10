@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+:root{
+    --cor-fundo-mark:  #222;
+    --cor-fundo: rgb(13, 25, 43);
+    --cor-letra-dest:  #4AB1F7;
+    --cor-text: #fff;
+    /* cor Card */
+    --cor-card-BG:hsl(216, 50%, 16%);
+    --cor-line: hsl(215, 32%, 27%);
+    --cor-cyan: hsl(178, 100%, 50%);
+    --cor-cyan-img:hsla(178, 100%, 50%, 0.418);
+    --cor-paragraph: hsl(215, 51%, 70%);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+    color: var(--cor-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+nav{
+    overflow: hidden;
+    font-size:min(18px, 2.5vw );
+    width: 100%;
+    display: flex;
+    background-color: var(--cor-card-BG);
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    border-radius: 0px 0px 80% 80%;
+}
+
+nav > ul > li > a > span {
+    vertical-align: text-bottom;
+}
+
+nav > h1 {
+    padding: 10px;
+}
+
+nav > h1 > span{
+    color:  var(--cor-letra-dest);
+}
+
+nav > ul {
+    display: flex;
+    cursor:pointer;
+}
+
+nav > ul > li {
+    margin: auto;
+    margin-left: 5px;
+    list-style: none;
+    padding: 4px; 
+    border-radius: 10px;
+    transition: .5s;    
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--cor-text); 
+}
+
+ul li:hover{
+    background-color:var(--cor-letra-dest);
+    border-radius: 5px;
+    transition: .5s;   
+}
+
+h1#titulo{
+    text-align: center;
+    padding: 10px;
+
+}
+
+main{
+    width: 100%;
+    min-height:600px;
+    background-color:var(--cor-fundo); 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    color: var(--cor-text);   
+}
+
+section#eu{
+    max-width: 1000px;
+    color: var(--cor-text);
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+
+section#eu > div#foto > img{
+    width: min(35vw, 300px);
+    height: min(35vw, 300px);
+    border-radius: 50%; 
+}
+
+#texto{
+    max-width: 60%;
+}
+
+#texto > h1{
+    font-size: min(4.5vw, 45px);
+}
+
+#texto > p{
+    font-size: min(2.5vw, 30px) ;
+    margin-top: 20px;
+}
+span#dev{
+    color: var(--cor-letra-dest);
+}
+
+.contato_pessoal {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding: 10px;
+}
+.contato_pessoal p {
+    color: #5e9dc7;
+}
+.contato_pessoal a{
+    text-decoration: none;  
+}

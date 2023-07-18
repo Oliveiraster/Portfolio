@@ -1,5 +1,5 @@
 const elem = document.querySelector("span#dev")
-const text = ' #Desenvolvedor Front-end!'
+const text = ' #DesenvolvedorFrontEnd!'
 const inter = 200
 
 function showText(elem, text, inter){
@@ -17,7 +17,6 @@ function showText(elem, text, inter){
             },1000)  
         }
         console.log(cont)
-        console.log(char[-1])
         const next = char[cont]
         elem.innerHTML += next 
     }, inter);

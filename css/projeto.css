@@ -157,6 +157,7 @@ a{
     color: #fff;
 }
 p.info{
+    height: 30%;
     color:var(--cor-paragraph);
     font-size: 18px;
     font-weight: 300;   

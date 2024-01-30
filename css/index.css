@@ -21,7 +21,7 @@
 
 body,html{
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     background-color: var(--cor-fundo);
     color: var(--cor-text);
     display: flex;
@@ -143,6 +143,65 @@ span#dev{
 .contato_pessoal a{
     text-decoration: none;  
 }
+/*INICIO DO CLOCK*/
+.nav_clock{
+    display: flex;
+    padding: 1rem;
+    justify-content: right;
+    height: 70px;
+}
+.clock {
+    width: 70px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 0 3px #EFEFEF,
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hand {
+    width: 500%;
+    height: 1px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.03s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.7, 1);
+}
+.hour-hand{
+    width: 25px;
+}
+.min-hand{
+    width: 20px;
+}
+.second-hand{
+    background-color: red;
+    height: 0.5px;
+    width: 15px;
+}
+.center{
+    background-color: white;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+}
+/*FIM DO CLOCK*/
 @media (max-width:500px) {
     section#eu{
         flex-direction: column;
